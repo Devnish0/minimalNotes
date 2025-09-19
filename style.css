@@ -1,4 +1,23 @@
 /* Reset default browser styles */
+
+
+
+
+@media only screen and (min-width: 775px){
+    .main{
+        display: none;
+    }
+    .lap{
+        display:flex;
+    }
+
+
+
+
+}
+.lap{
+    display: none;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,6 +31,7 @@ body {
     background: #f9f9f9;
     overflow-x: hidden;
 }
+main{}
 
 #header {
     height: 60px;
