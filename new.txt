@@ -1,0 +1,31 @@
+🎨 Color Scheme
+
+From the screenshot, the design mainly uses pastel + neon accents:
+
+Background / Base
+
+White #FFFFFF
+
+Light gray for subtle lines #F5F5F5
+
+Note Cards (pastel sticky notes)
+
+Purple: #CBA9FF
+
+Neon Green: #D4FF6A
+
+Sky Blue: #AEE1F9
+
+Peach Orange: #FFD3A5
+
+Text
+
+Black / Dark Gray: #222222
+
+Light Gray (secondary text): #888888
+
+Buttons / Accents
+
+Neon Yellow-Green Confirm Button: #C6FF00
+
+👉 It’s basically a white canvas with playful pastel note backgrounds + dark text.
