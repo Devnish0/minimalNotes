@@ -5,6 +5,7 @@ const conttxt = document.getElementById("container1");
 const contmain = document.getElementById("container2");
 const maindate = document.getElementById("date1");
 const sbtBtn = document.getElementById("smt");
+const cancel = document.getElementById("");
 const headText = document.getElementById("headtext"); // Title input
 const textBody = document.getElementById("bodytext"); // Textarea content
 let din;
@@ -58,7 +59,7 @@ function saveTheValue(params) {
 
 function makeNote(params) {}
 if (retrieved && retrieved.length > 0) {
-  retrieved.forEach((element) => {
+  retrieved.forEach((element, index) => {
     const note = document.createElement("div");
     // headtext
     console.log(element.color);
@@ -67,14 +68,26 @@ if (retrieved && retrieved.length > 0) {
     // console.log(element);
 
     note.innerHTML = `
-                    <span class="title">${element.title}</span>
-                    <span class="date">${element.time}</span>
-                    <span class="text">${element.inBody}</span>`;
+                   <span class="title">${element.title}</span>
+            <span class="date">${element.time}</span>
+            <span class="text">${element.inBody}</span>
+            <button class="delBtn" id = ${index} >remove</button>`;
     notes.append(note);
-    //   s;
+    //delete note
+    note.querySelector(".delBtn").addEventListener("click", () => {
+      console.log(`delete button clicked for :`, index);
+      deleteNote(index);
+    });
   });
 }
-// localStorage.removeItem('nishank')
+function deleteNote(index) {
+  if (confirm("sure niga you want to delete it??")) {
+    savedNotes.splice(index, 1);
+    localStorage.setItem("nishank", JSON.stringify(savedNotes));
+    window.location.reload();
+  }
+}
+// localStorage.removeItem("nishank");
 
 sbtBtn.addEventListener("click", () => {
   saveTheValue();

@@ -35,9 +35,23 @@ body {
   /*border: 1px solid black;*/
   /*background: #fff;*/
 }
+.search img {
+  width: 30px;
+}
 
 .welcome {
   margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.welcome img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f0f0f0;
 }
 
 .search {
@@ -108,6 +122,14 @@ body {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.4);
 }
+.delBtn {
+  margin-top: auto;
+  height: 20px;
+  background-color: #ffcccb; /* Light red */
+  color: #cc0000; /* Dark red text */
+  border: 1px solid #ff9999;
+  border-radius: 12px;
+}
 .hidden {
   display: none;
 }
@@ -117,6 +139,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+.greet {
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #addNote {
