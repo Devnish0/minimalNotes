@@ -1,37 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
-</head>
-<body>
-<div class="lap" >please open the website in phone or use inspect</div>
-<div class="main">
-<div id="header">
-    <div class="welcome"><img src="" alt="">Welcome back <span id="name">nishank</span></div>
-        <div class="search"><img src="" alt="">lol</div>
+  </head>
+  <body>
+    <div class="lap">please open the website in phone or use inspect</div>
 
-</div>
-<div class="head1">
-    <span id="new">Your Notes</span>
-    <button id="add"  >+</button>
-</div>
-<div id="section"></div>
+    <div class="main">
+      <div class="header">
+        <div class="welcome">
+          <img alt="" src="" />Welcome back <span id="name">nishank</span>
+        </div>
+        <div class="search"><img src="" alt="" />lol</div>
+      </div>
+      <div class="hidden" id="container1">
+        <div class="" id="addNote">
+          <!-- the maal masala goes here -->
+          <input type="text" id="headtext" value="Untitled" />
+          <span id="date1">hey there</span>
+          <textarea
+            name=""
+            id="bodytext"
+            placeholder="Enter your note content here..."
+          ></textarea>
+        </div>
+        <div class="btns">
+          <button type="submit" id="cncl">Cancel</button>
+          <button type="submit" id="smt">Confirm</button>
+        </div>
+      </div>
+      <div class="" id="container2">
+        <div class="head1">
+          <span id="new">Your Notes</span>
+          <button id="add">+</button>
+        </div>
 
-<div id="notes">
-</div>
+        <div id="section"></div>
 
-
-</div>
-
-
-
-</body>
-<script src="script.js"></script>
+        <div id="notes"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
