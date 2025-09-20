@@ -5,7 +5,7 @@ const conttxt = document.getElementById("container1");
 const contmain = document.getElementById("container2");
 const maindate = document.getElementById("date1");
 const sbtBtn = document.getElementById("smt");
-const cancel = document.getElementById("");
+const cancel = document.getElementById("cncl");
 const headText = document.getElementById("headtext"); // Title input
 const textBody = document.getElementById("bodytext"); // Textarea content
 let din;
@@ -94,4 +94,8 @@ sbtBtn.addEventListener("click", () => {
 });
 addBtn.addEventListener("click", () => {
   createNote();
+});
+cancel.addEventListener("click", () => {
+  conttxt.className = "hidden";
+  contmain.className = "";
 });
