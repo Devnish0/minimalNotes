@@ -1,15 +1,21 @@
 /* Reset default browser styles */
 
-@media only screen and (min-width: 775px) {
-  .main {
-    display: none;
-  }
-  .lap {
-    display: flex;
-  }
-}
-.lap {
-  display: none;
+/*@media only screen and (min-width: 775px) {*/
+/*  .main {*/
+/*    display: none;*/
+/*  }*/
+/*  .lap {*/
+/*    display: flex;*/
+/*  }*/
+/*}*/
+/*.lap {*/
+/*  display: none;*/
+/*}*/
+
+.main {
+  width: 100%;
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Centers the content when max-width is reached */
 }
 * {
   box-sizing: border-box;
@@ -18,11 +24,16 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   font-family: Arial, sans-serif;
   background: white;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -186,10 +197,14 @@ body {
   resize: none;
   padding: 10px;
   font-family: inherit;
-  font-size: 16px;
+  /*font-size: 16px;*/
   box-sizing: border-box;
   margin-top: 10px;
   font-size: 1.6rem;
+  /* overflow-x: hidden; Prevents horizontal scrollbar */
+  /* overflow-y: auto; Allows vertical scrolling when needed */
+  /* word-wrap: break-word; Breaks long words to prevent horizontal overflow */
+  /* white-space: pre-wrap; Preserves formatting while wrapping text */
 }
 /* cancel btnS */
 .btns {
@@ -217,4 +232,23 @@ body {
   padding: 0 10px;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.4);
+}
+.footer {
+  background-color: #f9f9f9;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 40px;
+  font-family: "poppins", sans-serif;
+  font-weight: 110;
+  gap: 3px;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }

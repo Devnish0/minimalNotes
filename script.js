@@ -1,5 +1,5 @@
 const addBtn = document.getElementById("add");
-const body = document.body;
+// const body = document.body;
 const notes = document.getElementById("notes");
 const conttxt = document.getElementById("container1");
 const contmain = document.getElementById("container2");
@@ -14,7 +14,7 @@ let ghante;
 let savedNotes = JSON.parse(localStorage.getItem("nishank")) || [];
 const retrieved = JSON.parse(localStorage.getItem(`nishank`));
 
-function createNote(title, time, text) {
+function createNote() {
   let samay = new Date();
   din = samay.getDate();
 
@@ -28,11 +28,11 @@ function createNote(title, time, text) {
   contmain.className = "hidden";
   maindate.innerText = `${din}th ${mahina} ${ghante}`;
 }
-function saveTheValue(params) {
+function saveTheValue() {
   let title = headText.value; // Gets the title from input
   let text = textBody.value; // Gets the content from textarea
 
-  //   if the value is empty give user a error
+  //   if the value is empty give user an error
   if (!title || !text) {
     alert("empty notes arend allowed");
     return;
@@ -57,14 +57,13 @@ function saveTheValue(params) {
   window.location.reload();
 }
 
-function makeNote(params) {}
 if (retrieved && retrieved.length > 0) {
   retrieved.forEach((element, index) => {
     const note = document.createElement("div");
     // headtext
     console.log(element.color);
     note.classList.add("note");
-    note.style.backgroundColor = [element.color];
+    note.style.backgroundColor = element.color;
     // console.log(element);
 
     note.innerHTML = `
