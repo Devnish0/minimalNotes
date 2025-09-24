@@ -231,7 +231,46 @@ body {
 #date1 {
   padding: 0 10px;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4)
+}
+.plscontainer{
+    display: flex;
+}
+
+.select  {
+    /*margin: 20px 20px;*/
+    /*padding: 10px 10px;*/
+    margin: 10px 10px ;
+    display: flex;
+    gap: 10px;
+    /*padding: 5px;*/
+    /*height: 37px;*/
+    /*width: 12%;*/
+    /*border-radius: 12px;*/
+    /*color: rgba(0, 0, 0, 0.4);*/
+    /*background-color: black;*/
+}
+.select span{
+    /*border: 1px solid black;*/
+    padding: 5px 10px 5px 10px;
+    border-radius:10px;
+    cursor: pointer;
+    /*margin-top: auto;*/
+    /*height: 20px;*/
+    background-color: #ffcccb; /* Light red */
+    color: #cc0000; /* Dark red text */
+    border: 1px solid #ff9999;
+    /*border-radius: 12px;*/
+
+
+}
+
+select option  {
+    /*margin: 20px 20px;*/
+    /*padding: 10px 10px;*/
+
+
+    color: rgba(0, 0, 0, 0.4);
 }
 .footer {
   background-color: #f9f9f9;
