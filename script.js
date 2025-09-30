@@ -8,6 +8,8 @@ const sbtBtn = document.getElementById("smt");
 const cancel = document.getElementById("cncl");
 const headText = document.getElementById("headtext"); // Title input
 const textBody = document.getElementById("bodytext"); // Textarea content
+const select = document.getElementsByClassName("select");
+
 let din;
 let mahina;
 let ghante;
@@ -67,7 +69,7 @@ if (retrieved && retrieved.length > 0) {
     // console.log(element);
 
     note.innerHTML = `
-                   <span class="title">${element.title}</span>
+            <span class="title">${element.title}</span>
             <span class="date">${element.time}</span>
             <span class="text">${element.inBody}</span>
             <button class="delBtn" id = ${index} >remove</button>`;
