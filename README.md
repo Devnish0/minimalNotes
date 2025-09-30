@@ -14,9 +14,9 @@ A simple, responsive web-based notes application built with vanilla HTML, CSS, a
 
 ## 🚀 Demo
 
-![Notes App Preview](https://nishank.dev)
+[Notes App Preview](https://nishank.dev)
 
-_Replace this placeholder with actual screenshots of your app_
+
 
 ## 🛠️ Technologies Used
 
@@ -186,7 +186,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Nishank Gangwar** - [@Devnish0](https://github.com/Devnish0)
+**Nishank** - [@Devnish0](https://github.com/Devnish0)
 
 ## 🙏 Acknowledgments
 
