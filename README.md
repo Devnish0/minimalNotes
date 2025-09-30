@@ -14,7 +14,7 @@ A simple, responsive web-based notes application built with vanilla HTML, CSS, a
 
 ## 🚀 Demo
 
-![Notes App Preview](https://via.placeholder.com/800x400/f8f9fa/343a40?text=Notes+App+Preview)
+![Notes App Preview](https://nishank.dev)
 
 _Replace this placeholder with actual screenshots of your app_
 
@@ -79,7 +79,7 @@ Notes/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Devnish0/Notes.git
+   git clone https://github.com/Devnish0/minimalNotes.git
    ```
 
 2. **Navigate to the project directory:**
