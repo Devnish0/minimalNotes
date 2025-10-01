@@ -100,3 +100,11 @@ cancel.addEventListener("click", () => {
   conttxt.className = "hidden";
   contmain.className = "";
 });
+document.getElementById("click").addEventListener("click",()=>{
+  console.log("nishank");
+  let span =  document.createElement("span")
+  document.querySelector("#wow-container").appendChild(span)
+  span.innerText = 'wow'
+  
+  
+})
